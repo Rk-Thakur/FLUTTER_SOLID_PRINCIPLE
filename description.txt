@@ -1,0 +1,19 @@
+S.O.L.I.D Principle
+
+SRP(Single Responsibility Principle):
+    The idea behid the SRP is that every class, module or function in a program whould have one responsibility purpose in a program. As a commonly used definitaion, "every class should have only one responsibility and one reason to change".
+
+Open/Closed Principle: (Open for the extension and Close for the Modification)
+    Robert C. Martin considered this principle as the most important principle of object-oriented design. But he wasn't the first one who defined it. Bertrand Meyer wrote about it in 1988 in his book Object Orinted Software Construction. He explained the Open/Closed Principle as:
+            Software entities(classes, modules, function, etc.) should be open for extension, but closed for modification.
+
+Liskov Substitution Principle: (Super class method will be shown in subclass which is not declared in extended sub class that the problem.)
+    The LSP is a particular definitino of a subtyping realtion challed strong behavioral subtyping that was initially introduced by Barbara Liskov in  a 1988 conference a principle in object oriented programjing stating that an object and a sub-object (such as a clas that extends the first class) must be interchangeable without breaking the program. 
+        LSV states taht objects of a superclass should be replaceable with objects of its subclass without breaking the application. In other words, what we want is to have the objects of our subclasses behaving the same way as the objects of our superclass.
+
+Interface Segregation Principle (ISP):
+    ISP states that no code should be forces to depend on method it does not use. ISP splits that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them. Such shrunken interfaces are also called role interfaces. ISP is intended to keep a system decoupled and thus easier to refactor, change and redeploy.    
+
+Dependency Inversion Principle(DIP):
+    It states that high level modules should not depend on low level modules; both should depend on Abstractions. Abstractions should not depend on details. Details should depend upon abstraction. High-Level modules, which provide complex login, should be easily reusable and unaffected by changes in low-level modules, which provide utility features. To achievef that, you need to introduce an abstraction that decouples the high-level and low-level modules from each other. 
+    An important detial of this definition is , that high-level  and low-level modules depend on the abstraction. The design principle does not just change the direction of the dependency as you might have expected when you read its name for the first time. It splits the dependency between high-level and low-level modules by introducing an abstraction between them. So in the end, you get two dependencies: the hight-level module depends on the abstraction, and the low-level depends on the same abstraction.           
